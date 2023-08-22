@@ -1,76 +1,131 @@
-body{
-    font-family:"Roboto" ,sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
 }
 
-ul{
-    list-style-type: none;
+a {
+    text-decoration: none;
 }
 
-.type{
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.section {
+    padding: 120px 0px;
+}
+
+.type {
     background: #fff;
 }
 
-.type-logo{
-    color:#4D5AE5;
-        font-family:"Raleway", sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+.type-logo {
+    color: #4D5AE5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 24px 1169px 24px 156px;
+    align-items: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    height: 24px;
 }
 
-.type-studio{
-    color:#2E2F42;
-        font-family:"Raleway", sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 21px;
-        letter-spacing: 0.54px;
-        text-transform: uppercase;
+.type-studio {
+    color: #2E2F42;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
 }
 
 .type-menu :hover,
-.type-menu :focus{
+.type-menu :focus {
     color: #404bbf;
 }
 
+.type-menu {
+    padding: 24px 832px 24px 347px;
+    gap: 40px;
+    display: inline-flex;
+    align-items: flex-start;
+}
+
 .type-menu-studio {
-    color:#2E2F42;
+    color: #2E2F42;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 48px;
+    height: 24px;
+
 }
 
-.type-menu-portfolio{
-    color:#2E2F42;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em; 
-}
-
-.type-menu-contacts{
-    color:#2E2F42;
+.type-menu-portfolio {
+    color: #2E2F42;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 66px;
+    height: 24px;
 }
 
-.info{
+.type-menu-contacts {
+    color: #2E2F42;
+    font-family: Roboto;
+    font-size: 16px;
     font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 67px;
+    height: 24px;
+}
+
+.info {
+    font-style: normal;
+    gap: 40px;
 }
 
 .type-info :hover,
@@ -78,49 +133,58 @@ ul{
     color: #404bbf;
 }
 
-.type-info-mail{
-    color:#434455;
+.type-info-mail {
+    color: #434455;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 347px 24px 940px;
+    width: 153px;
+    height: 24px;
 }
 
-.type-info-phone{
-    color:#434455;
+.type-info-phone {
+    color: #434455;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 156px 24px 1133px;
+    width: 151px;
+    height: 24px;
 }
 
-.hero{
+.hero {
     background: #2E2F42;
     line-height: 1.07;
+    width: 1440px;
+    height: 600px;
 }
 
-.hero-text{
-    color:#FFF;
+.hero-text {
+    color: #FFF;
     text-align: center;
     font-family: Roboto;
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height:1.07;
- 
+    line-height: 1.07;
     letter-spacing: 1.12px;
+    padding: 188px 472px 292px 472px;
+    align-items: center;
 }
 
 .hero-button:hover,
-.hero-button:focus{
-    background-color:#404bbf;
+.hero-button:focus {
+    background-color: #404bbf;
 }
 
-.hero-button{
+.hero-button {
     background: #4D5AE5;
     color: #FFF;
     font-family: "Roboto", sans-serif;
@@ -130,10 +194,20 @@ ul{
     line-height: 24px;
     letter-spacing: 0.64px;
     cursor: pointer;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+    margin: 356px 635px 188px 636px;
 }
 
-.about{
-    color:#2E2F42; 
+.objects {
+    gap: 24px;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.about {
+    color: #2E2F42;
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -142,8 +216,8 @@ ul{
     letter-spacing: 0.4px;
 }
 
-.about-text{
-    color:#434455;
+.about-text {
+    color: #434455;
 
     font-family: Roboto;
     font-size: 16px;
@@ -153,13 +227,15 @@ ul{
     letter-spacing: 0.32px;
 }
 
-.our{
-    background:#F4F4FD;
-    line-height:1.11
+.our {
+    background: #F4F4FD;
+    line-height: 1.11;
+    width: 1440px;
+    height: 732px;
 }
 
-.our-text{
-    color:#2e2f42;
+.our-text {
+    color: #2e2f42;
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -170,14 +246,19 @@ ul{
     text-transform: capitalize;
 }
 
-.card{
+.card {
     padding-bottom: 0px;
     justify-content: center;
-    background:#FFF;
+    background: #FFF;
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
 
-.card-name{
-    color:#2E2F42;
+.card-name {
+    color: #2E2F42;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -187,7 +268,7 @@ ul{
     letter-spacing: 0.02em;
 }
 
-.card-text{
+.card-text {
     color: #434455;
     text-align: center;
     font-family: Roboto;
@@ -198,23 +279,23 @@ ul{
     letter-spacing: 0.02em;
 }
 
-.portdolio{
+.portdolio {
     line-height: 1.11;
 }
 
-.portfolio-name{
-    color:#2E2F42;
+.portfolio-name {
+    color: #2E2F42;
     text-align: center;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
-.portfolio-card{
+.portfolio-card {
     flex-shrink: 0;
     background: #FFF;
 }
@@ -229,7 +310,7 @@ ul{
     letter-spacing: 0.02em;
 }
 
-.portfolio-card-text{
+.portfolio-card-text {
     color: #434455;
     font-family: Roboto;
     font-size: 16px;
@@ -239,11 +320,11 @@ ul{
     letter-spacing: 0.02em;
 }
 
-.done{
-    background:#2E2F42;
+.done {
+    background: #2E2F42;
 }
 
-.done-text{
+.done-text {
     color: var(--cloud, #F4F4FD);
 
     font-family: Roboto;
@@ -254,7 +335,7 @@ ul{
     letter-spacing: 0.32px;
 }
 
-.logo-studio{
+.logo-studio {
     color: #F4F4FD;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
