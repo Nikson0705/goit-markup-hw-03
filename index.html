@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <meta charset="UTF-8" />
@@ -21,10 +21,10 @@
   </head>
   <body>
     <!-- Шапка веб сторінки -->
-    <div class="container">
-      <header class="type">
+    <header class="type">
+      <div class="container">
         <!-- Меню навігації -->
-        <nav>
+        <nav class="navigation">
           <!-- логотип -->
           <a href="" class="type-logo">
             Web
@@ -55,45 +55,45 @@
             </li>
           </ul>
         </address>
-      </header>
-    </div>
+      </div>
+    </header>
     <!-- Основна частина -->
     <main>
       <!-- секція1 -->
-      <div class="container">
         <section class="hero" class="section">
+          <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </section>
       </div>
       <!-- Секція2 -->
-      <div class="container">
         <section class="section" class="objects">
+          <div class="container">
           <h2>About</h2>
 
-          <ul>
-            <li>
+          <ul class="objects-list">
+            <li class="objects-list-one">
               <h3 class="about">Strategy</h3>
               <p class="about-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="objects-list-one">
               <h3 class="about">Punctuality</h3>
               <p class="about-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="objects-list-one">
               <h3 class="about">Diligence</h3>
               <p class="about-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="objects-list-one">
               <h3 class="about">Technologies</h3>
               <p class="about-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -105,8 +105,8 @@
       </div>
 
       <!-- Секція3 -->
-      <div class="container">
         <section class="our" class="section">
+          <div class="container">
           <h2 class="our-text">Our Team</h2>
 
           <ul>
@@ -157,8 +157,8 @@
         </section>
       </div>
       <!-- секція4 -->
-      <div class="container">
         <section class="portfolio" class="section">
+         <div class="container">
           <h2 class="portfolio-name">Our Portfolio</h2>
           <ul>
             <li class="portfolio-card">
@@ -226,9 +226,10 @@
       </div>
     </main>
 
-    <div class="container">
+    
       <footer class="done">
-        <a class="type-logo" href="">
+        <div class="container">
+        <a  class="footer-link" class="type-logo" href="">
           Web
           <span class="logo-studio">Studio</span>
         </a>

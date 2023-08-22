@@ -32,11 +32,17 @@ img {
 }
 
 .container {
+    display: flex;
     max-width: 1158px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: 0;
     margin-right: 0;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
 }
 
 .section {
@@ -45,6 +51,7 @@ img {
 
 .type {
     background: #fff;
+    border-bottom: 1px #e7e9fc;
 }
 
 .type-logo {
@@ -56,11 +63,11 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 24px 1169px 24px 156px;
     align-items: center;
     display: inline-flex;
     flex-shrink: 0;
-    height: 24px;
+    margin-right: 76px;
+
 }
 
 .type-studio {
@@ -82,7 +89,7 @@ img {
 .type-menu {
     padding: 24px 832px 24px 347px;
     gap: 40px;
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
 }
 
@@ -94,8 +101,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 48px;
-    height: 24px;
+    padding: 24px 0;
 
 }
 
@@ -107,8 +113,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 66px;
-    height: 24px;
+    padding: 24px 0;
 }
 
 .type-menu-contacts {
@@ -119,13 +124,14 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 67px;
-    height: 24px;
+    padding: 24px 0;
+    margin-right: 0px;
 }
 
 .info {
     font-style: normal;
     gap: 40px;
+    display: flex;
 }
 
 .type-info :hover,
@@ -141,9 +147,7 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 347px 24px 940px;
-    width: 153px;
-    height: 24px;
+  
 }
 
 .type-info-phone {
@@ -154,16 +158,13 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 156px 24px 1133px;
-    width: 151px;
-    height: 24px;
+    margin-right: 0;
 }
 
 .hero {
     background: #2E2F42;
     line-height: 1.07;
-    width: 1440px;
-    height: 600px;
+    padding: 188px 0;
 }
 
 .hero-text {
@@ -175,7 +176,7 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    padding: 188px 472px 292px 472px;
+    max-width: 496px;
     align-items: center;
 }
 
@@ -185,7 +186,7 @@ img {
 }
 
 .hero-button {
-    background: #4D5AE5;
+    background-color: #4D5AE5;
     color: #FFF;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -196,16 +197,27 @@ img {
     cursor: pointer;
     gap: 10px;
     border-radius: 4px;
-    padding: 16px 32px 16px 32px;
-    margin: 356px 635px 188px 636px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .objects {
     gap: 24px;
     align-items: flex-start;
     display: inline-flex;
+    padding: 120px 0;
 }
 
+.objects-list {
+    display: flex;
+    gap: 24px;
+}
+
+.objects-list-one {
+    width: calc((100%-3*24px) / 4);
+}
 .about {
     color: #2E2F42;
     font-family: Roboto;
@@ -214,11 +226,11 @@ img {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .about-text {
     color: #434455;
-
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -230,8 +242,7 @@ img {
 .our {
     background: #F4F4FD;
     line-height: 1.11;
-    width: 1440px;
-    height: 732px;
+    padding: 120px 0;
 }
 
 .our-text {
@@ -244,17 +255,17 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .card {
     padding-bottom: 0px;
     justify-content: center;
     background: #FFF;
-    display: inline-flex;
+    display: flex;
     padding-bottom: 0px;
     flex-direction: column;
-    align-items: center;
-    gap: 32px;
+    gap: 24px;
 }
 
 .card-name {
@@ -322,6 +333,7 @@ img {
 
 .done {
     background: #2E2F42;
+    padding: 100px 0;
 }
 
 .done-text {
@@ -333,6 +345,7 @@ img {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    max-width: 264px;
 }
 
 .logo-studio {
@@ -344,4 +357,9 @@ img {
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-bottom: 16px;
 }
