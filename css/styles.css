@@ -25,8 +25,8 @@ img {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-card {
@@ -35,7 +35,7 @@ img {
     border-top: none;
 }
 
-.navigation .container {
+.navigation {
     align-items: center;
     display: flex;
 }
@@ -46,7 +46,7 @@ img {
 
 .type {
     background: #fff;
-    border-bottom: 1px #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .type-logo {
@@ -122,7 +122,7 @@ img {
     margin-right: 0px;
 }
 
-.info {
+.type-info {
     font-style: normal;
     gap: 40px;
     display: flex;
@@ -158,7 +158,8 @@ img {
 .hero .container {
     background: #2E2F42;
     line-height: 1.07;
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-text {
@@ -249,7 +250,13 @@ img {
 .our .container {
     background: #F4F4FD;
     line-height: 1.11;
-    padding: 120px 0;
+    padding-bottom: 120px;
+    padding-top: 120px ;
+}
+
+.container-our {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .point {
@@ -359,7 +366,8 @@ img {
 
 .done .container {
     background: #2E2F42;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .done-text {
