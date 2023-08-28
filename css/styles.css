@@ -29,6 +29,14 @@ img {
     margin-right: auto;
 }
 
+.container-footer {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container-card {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
