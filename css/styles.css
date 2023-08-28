@@ -413,5 +413,6 @@ padding: 100px 0;
 }
 
 .footer-link{
+    margin-bottom: 16px;
     display: inline-block;
-    margin-bottom: 16px; }
+ }
