@@ -352,6 +352,11 @@ padding: 120px 0 120px 0;
         width: calc((100% - 48px) / 3);
 }
 
+.caption {
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
 .portfolio-card-name {
         color: var(--navyblue, #2E2F42);
             text-transform: capitalize;
