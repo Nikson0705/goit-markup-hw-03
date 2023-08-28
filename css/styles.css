@@ -345,8 +345,8 @@ padding: 120px 0 120px 0;
         column-gap: 24px;
 }
 
-.portfolio-card {
-    margin-right: 24px;
+.portfolio-card {   
+     margin: 0;
     width: calc((100% - 48px) / 3);
 }
 
